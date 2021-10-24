@@ -4,11 +4,15 @@
 	box-sizing: border-box;
 }
 :root {
-	--clr-bg: hsl(0, 10%, 11%);
+	--clr-bg: hsl(0, 41%, 93%);
+	--clr-black: hsl(0, 0%, 0%);
+	--clr-coral: hsl(16, 100%, 66%);
+	--clr-white: hsl(0, 0%, 100%);
 }
 body {
 	margin: 0;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background-color: var(--clr-bg);
 }
 .wrapper {
 	max-width: 840px;
@@ -23,7 +27,7 @@ body {
 	flex-wrap: wrap;
 }
 .gallery {
-	background-color: coral;
+	background-color: rgb(56, 56, 56);
 	padding: 100px 7px;
 }
 .title {
@@ -57,8 +61,44 @@ body {
 .gallery .title-center h1:before {
 	left: 30%;
 }
-.gallery .btn {
+.gallery .buttons {
 	flex: 0 0 100%;
 	max-width: 100%;
 	margin-bottom: 20px;
+}
+.gallery .buttons ul {
+	list-style: none;
+	text-align: center;
+	padding: 0;
+}
+.gallery .buttons ul li {
+	display: inline-block;
+	text-transform: uppercase;
+	color: var(--clr-black);
+	font-weight: 600;
+	padding-bottom: 0px;
+	cursor: pointer;
+}
+.gallery .buttons ul li.active {
+	color: var(--clr-coral);
+	border-bottom: 2px solid var(--clr-coral);
+}
+.gallery .work-gallery {
+	flex: 0 0 100%;
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.gallery .work-gallery .cell {
+	flex: 0 0 33.33%;
+	max-width: 33.33%;
+	position: relative;
+	padding: 10px;
+}
+.gallery .work-gallery .cell .inner {
+	position: relative;
+}
+.gallery .work-gallery .cell img {
+	width: 100%;
+	display: block;
 }
