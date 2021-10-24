@@ -4,10 +4,10 @@
 	box-sizing: border-box;
 }
 :root {
-	--clr-bg: hsl(0, 41%, 93%);
+	--clr-bg: hsl(0, 0%, 100%);
 	--clr-black: hsl(0, 0%, 0%);
 	--clr-coral: hsl(16, 100%, 66%);
-	--clr-white: hsl(0, 0%, 100%);
+	--clr-wrapper: hsl(0, 33%, 4%);
 }
 body {
 	margin: 0;
@@ -27,7 +27,7 @@ body {
 	flex-wrap: wrap;
 }
 .gallery {
-	background-color: rgb(56, 56, 56);
+	background-color: var(--clr-bg);
 	padding: 100px 7px;
 }
 .title {
@@ -38,9 +38,9 @@ body {
 .title h1 {
 	display: inline-block;
 	font-size: 2.25rem;
-	text-transform: capitalize;
+	text-transform: uppercase;
 	font-weight: 800;
-	color: hsl(275, 100%, 25%);
+	color: var(--clr-coral);
 	margin: 0 0 5px;
 	position: relative;
 }
