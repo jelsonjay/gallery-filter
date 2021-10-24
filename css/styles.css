@@ -1,0 +1,16 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+:root {
+	--clr-bg: hsl(0, 10%, 11%);
+}
+body {
+	margin: 0;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.wrapper {
+	max-width: 60rem;
+	margin: auto;
+}
