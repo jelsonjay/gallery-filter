@@ -102,3 +102,19 @@ body {
 	width: 100%;
 	display: block;
 }
+/*============MEDIA QUERY===============*/
+@media screen and (max-width: 768px) {
+	.gallery .work-gallery .cell {
+		flex: 0 0 50%;
+		max-width: 50%;
+		position: relative;
+		padding: 10px;
+	}
+}
+
+@media screen and (max-width: 468px) {
+	.gallery .work-gallery .cell {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
